@@ -8,15 +8,15 @@ import {
   TeamOutlined,
 } from '@ant-design/icons';
 import React, { useContext } from 'react';
-// import { AdminContext } from '@/library/admin.context';
+import { AdminContext } from '@/library/admin.context';
 import type { MenuProps } from 'antd';
 import Link from 'next/link';
 
 type MenuItem = Required<MenuProps>['items'][number];
 const AdminSideBar = () => {
   const { Sider } = Layout;
-  // const { collapseMenu } = useContext(AdminContext)!;
-  const { collapseMenu } = 'AdminContext';
+  const { collapseMenu } = useContext(AdminContext)!;
+
   const items: MenuItem[] = [
     {
       key: 'grp',

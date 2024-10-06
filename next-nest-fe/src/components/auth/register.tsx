@@ -1,36 +1,11 @@
 'use client';
 import React from 'react';
-import Link from 'next/link';
 import { Button, Col, Divider, Form, Input, notification, Row } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
-import { useRouter } from 'next/navigation';
-
-// import { sendRequest } from '@/utils/api';
+import Link from 'next/link';
 
 const Register = () => {
-  const router = useRouter();
-
   const onFinish = async (values: any) => {};
-  // const onFinish = async (values: any) => {
-  //   const { email, password, name } = values;
-  //   const res = await sendRequest<IBackendRes<any>>({
-  //     url: `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/v1/auth/register`,
-  //     method: 'POST',
-  //     body: {
-  //       email,
-  //       password,
-  //       name,
-  //     },
-  //   });
-  //   if (res?.data) {
-  //     router.push(`/verify/${res?.data?._id}`);
-  //   } else {
-  //     notification.error({
-  //       message: 'Register error',
-  //       description: res?.message,
-  //     });
-  //   }
-  // };
 
   return (
     <Row justify={'center'} style={{ marginTop: '30px' }}>
